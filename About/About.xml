@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimVore-2 (Overstuffed) precept</name>
+  <author>Me</author>
+  <packageId>RimVore2Precept</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <description>Additional precept</description>
+  <modDependencies>
+    <li>
+      <packageId>Nabber.RimVore2</packageId>
+      <displayName>RimVore-2</displayName>
+      <downloadUrl>https://gitlab.com/Nabber/rimvore-2.git</downloadUrl>
+    </li>
+  </modDependencies>
+  <incompatibleWith>
+  </incompatibleWith>
+  <loadAfter>
+    <li>Nabber.RimVore2</li>
+  </loadAfter>
+</ModMetaData>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IssueDef>
+    <defName>RV2_Cleavage</defName>
+    <label>Amalgamation</label>
+    <iconPath>UI/Issues/Anal</iconPath>
+  </IssueDef>
+
+  <!-- Neutral -->
+  <!--<PreceptDef>
+    <defName>RV2_Cleavage_Accepted</defName>
+    <issue>RV2_Cleavage</issue>
+    <label>Accepted</label>
+    <description>Amalgamation is acceptable.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <associatedMemes>
+      <li>RV2_Preyism</li>
+      <li>RV2_Predation</li>
+    </associatedMemes>
+  </PreceptDef>-->
+
+  <!-- Disliked -->
+  <PreceptDef>
+    <defName>RV2_Cleavage_Disliked</defName>
+    <issue>RV2_Cleavage</issue>
+    <label>disliked</label>
+    <description>Amalgamation is not okay.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <associatedMemes>
+      <li>RV2_Preyism</li>
+      <li>RV2_Predation</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>RV2_Cleavage</eventDef>
+        <thought>RV2_Cleavage_Disliked</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RV2_Cleavage</eventDef>
+        <thought>RV2_Cleavage_Know_Disliked</thought>
+      </li>
+      <li Class="RimVore2.PreceptComp_Quirk_RemoveQuirks">
+        <quirks>
+          <li>TypePreference_Predator_Cleavage_Obsessed</li>
+          <li>TypePreference_Prey_Cleavage_Obsessed</li>
+        </quirks>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <ThoughtDef>
+    <defName>RV2_Cleavage_Disliked</defName>
+    <durationDays>3</durationDays>
+    <stages>
+      <li>
+        <label>I participated in Amalgamation</label>
+        <description>I should not have done that, my ideology discourages it</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RV2_Cleavage_Know_Disliked</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>Amalgamation participant</label>
+        <baseOpinionOffset>-5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!-- Abhorrent -->
+  <PreceptDef>
+    <defName>RV2_Cleavage_Abhorrent</defName>
+    <issue>RV2_Cleavage</issue>
+    <label>abhorrent</label>
+    <description>Amalgamation is an affront to our belief.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <associatedMemes>
+      <li>RV2_Preyism</li>
+      <li>RV2_Predation</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>RV2_Cleavage</eventDef>
+        <thought>RV2_Cleavage_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RV2_Cleavage</eventDef>
+        <thought>RV2_Cleavage_Know_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RV2_Cleavage</eventDef>
+        <thought>RV2_Cleavage_Know_Social_Abhorrent</thought>
+      </li>
+      <li Class="RimVore2.PreceptComp_Quirk_RemoveQuirks">
+        <quirks>
+          <li>TypePreference_Predator_Cleavage_Likes</li>
+          <li>TypePreference_Predator_Cleavage_Obsessed</li>
+          <li>TypePreference_Prey_Cleavage_Likes</li>
+          <li>TypePreference_Prey_Cleavage_Obsessed</li>
+        </quirks>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <ThoughtDef>
+    <defName>RV2_Cleavage_Abhorrent</defName>
+    <durationDays>3</durationDays>
+    <stages>
+      <li>
+        <label>Amalgamation</label>
+        <description>I participated in Amalgamation when it is against my ideology. I feel horrible.</description>
+        <baseMoodEffect>-24</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RV2_Cleavage_Know_Abhorrent</defName>
+    <durationDays>3</durationDays>
+    <stages>
+      <li>
+        <label>Someone anally vored!!</label>
+        <description>One of us partook in Amalgamation, this is a disgusting insult to our beliefs!</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RV2_Cleavage_Know_Social_Abhorrent</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>Amalgamation</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!-- Liked -->
+  <PreceptDef>
+    <defName>RV2_Cleavage_Liked</defName>
+    <issue>RV2_Cleavage</issue>
+    <label>liked</label>
+    <description>Amalgamation is to be praised and encouraged.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <associatedMemes>
+      <li>RV2_Preyism</li>
+      <li>RV2_Predation</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>RV2_Cleavage</eventDef>
+        <thought>RV2_Cleavage_Liked</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RV2_Cleavage</eventDef>
+        <thought>RV2_Cleavage_Know_Liked</thought>
+      </li>
+      <li Class="RimVore2.PreceptComp_Quirk_RemoveQuirks">
+        <quirks>
+          <li>TypePreference_Predator_Cleavage_Refuses</li>
+        </quirks>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <ThoughtDef>
+    <defName>RV2_Cleavage_Liked</defName>
+    <durationDays>3</durationDays>
+    <stages>
+      <li>
+        <label>Amalgamation</label>
+        <description>Partaking in this divine art fills me with joy</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RV2_Cleavage_Know_Liked</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>Amalgamation participant</label>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!-- Required -->
+  <PreceptDef>
+    <defName>RV2_Cleavage_Required</defName>
+    <issue>RV2_Cleavage</issue>
+    <label>required</label>
+    <description>The anus is a divine body part, demanding regular worship through Amalgamation.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <associatedMemes>
+      <li>RV2_Preyism</li>
+      <li>RV2_Predation</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>RV2_Cleavage</eventDef>
+        <thought>RV2_Cleavage_Required</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RV2_Cleavage</eventDef>
+        <thought>RV2_Cleavage_Know_Required</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RV2_Cleavage</eventDef>
+        <thought>RV2_Cleavage_Know_Social_Required</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>RV2_NoRecentAnalVore_Required</thought>
+        <description>No Amalgamation for {VORERELATEDINTERVAL} days</description>
+      </li>
+      <li Class="RimVore2.PreceptComp_Quirk_RemoveQuirks">
+        <quirks>
+          <li>TypePreference_Predator_Cleavage_Dislikes</li>
+          <li>TypePreference_Predator_Cleavage_Refuses</li>
+          <li>TypePreference_Prey_Cleavage_Dislikes</li>
+          <li>TypePreference_Prey_Cleavage_Refuses</li>
+        </quirks>
+      </li>
+      <li Class="RimVore2.PreceptComp_Quirk_AddQuirks">
+        <quirks>
+          <li>Enablers_Core_Type_Anal</li>
+        </quirks>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <ThoughtDef>
+    <defName>RV2_Cleavage_Required</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>Anally vored</label>
+        <description>A divine act to express my beliefs.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RV2_Cleavage_Know_Required</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>Someone anally vored!</label>
+        <description>One of our members was involved in Amalgamation, a very respectable act!</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RV2_Cleavage_Know_Social_Required</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>divine Amalgamation participant</label>
+        <baseOpinionOffset>2</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RV2_NoRecentAnalVore_Required</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <workerClass>RimVore2.ThoughtWorker_Precept_RecentKeyword</workerClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>want to participate in Amalgamation</label>
+        <description>It's been far too long since I was involved in an act of Amalgamation.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="RimVore2.PreceptThoughtWorker_ListeningKeyword">
+        <keyword>VoreType_Anal</keyword>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+</Defs>
