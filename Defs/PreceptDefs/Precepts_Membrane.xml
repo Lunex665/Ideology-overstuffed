@@ -3,7 +3,7 @@
 
   <IssueDef>
     <defName>RV2_Membrane</defName>
-    <label>Amalgamation</label>
+    <label>Membrane</label>
     <iconPath>UI/Issues/Anal</iconPath>
   </IssueDef>
 
@@ -12,7 +12,7 @@
     <defName>RV2_Membrane_Accepted</defName>
     <issue>RV2_Membrane</issue>
     <label>Accepted</label>
-    <description>Amalgamation is acceptable.</description>
+    <description>Membrane is acceptable.</description>
     <impact>Low</impact>
     <displayOrderInIssue>20</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
@@ -27,7 +27,7 @@
     <defName>RV2_Membrane_Disliked</defName>
     <issue>RV2_Membrane</issue>
     <label>disliked</label>
-    <description>Amalgamation is not okay.</description>
+    <description>Membrane is not okay.</description>
     <impact>Medium</impact>
     <displayOrderInIssue>20</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
@@ -58,7 +58,7 @@
     <durationDays>3</durationDays>
     <stages>
       <li>
-        <label>I participated in Amalgamation</label>
+        <label>I participated in Membrane</label>
         <description>I should not have done that, my ideology discourages it</description>
         <baseMoodEffect>-10</baseMoodEffect>
       </li>
@@ -72,7 +72,7 @@
     <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
     <stages>
       <li>
-        <label>Amalgamation participant</label>
+        <label>Membrane participant</label>
         <baseOpinionOffset>-5</baseOpinionOffset>
       </li>
     </stages>
@@ -83,7 +83,7 @@
     <defName>RV2_Membrane_Abhorrent</defName>
     <issue>RV2_Membrane</issue>
     <label>abhorrent</label>
-    <description>Amalgamation is an affront to our belief.</description>
+    <description>Membrane is an affront to our belief.</description>
     <impact>Medium</impact>
     <displayOrderInIssue>20</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
@@ -120,8 +120,8 @@
     <durationDays>3</durationDays>
     <stages>
       <li>
-        <label>Amalgamation</label>
-        <description>I participated in Amalgamation when it is against my ideology. I feel horrible.</description>
+        <label>Membrane</label>
+        <description>I participated in Membrane when it is against my ideology. I feel horrible.</description>
         <baseMoodEffect>-24</baseMoodEffect>
       </li>
     </stages>
@@ -132,7 +132,7 @@
     <stages>
       <li>
         <label>Someone anally vored!!</label>
-        <description>One of us partook in Amalgamation, this is a disgusting insult to our beliefs!</description>
+        <description>One of us partook in Membrane, this is a disgusting insult to our beliefs!</description>
         <baseMoodEffect>-10</baseMoodEffect>
       </li>
     </stages>
@@ -145,7 +145,7 @@
     <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
     <stages>
       <li>
-        <label>Amalgamation</label>
+        <label>Membrane</label>
         <baseOpinionOffset>-10</baseOpinionOffset>
       </li>
     </stages>
@@ -156,7 +156,7 @@
     <defName>RV2_Membrane_Liked</defName>
     <issue>RV2_Membrane</issue>
     <label>liked</label>
-    <description>Amalgamation is to be praised and encouraged.</description>
+    <description>Membrane is to be praised and encouraged.</description>
     <impact>Medium</impact>
     <displayOrderInIssue>20</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
@@ -186,7 +186,7 @@
     <durationDays>3</durationDays>
     <stages>
       <li>
-        <label>Amalgamation</label>
+        <label>Membrane</label>
         <description>Partaking in this divine art fills me with joy</description>
         <baseMoodEffect>10</baseMoodEffect>
       </li>
@@ -200,7 +200,7 @@
     <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
     <stages>
       <li>
-        <label>Amalgamation participant</label>
+        <label>Membrane participant</label>
         <baseOpinionOffset>5</baseOpinionOffset>
       </li>
     </stages>
@@ -211,7 +211,7 @@
     <defName>RV2_Membrane_Required</defName>
     <issue>RV2_Membrane</issue>
     <label>required</label>
-    <description>The anus is a divine body part, demanding regular worship through Amalgamation.</description>
+    <description>The anus is a divine body part, demanding regular worship through Membrane.</description>
     <impact>High</impact>
     <displayOrderInIssue>20</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
@@ -234,7 +234,7 @@
       </li>
       <li Class="PreceptComp_SituationalThought">
         <thought>RV2_NoRecentAnalVore_Required</thought>
-        <description>No Amalgamation for {VORERELATEDINTERVAL} days</description>
+        <description>No Membrane for {VORERELATEDINTERVAL} days</description>
       </li>
       <li Class="RimVore2.PreceptComp_Quirk_RemoveQuirks">
         <quirks>
@@ -269,7 +269,7 @@
     <stages>
       <li>
         <label>Someone anally vored!</label>
-        <description>One of our members was involved in Amalgamation, a very respectable act!</description>
+        <description>One of our members was involved in Membrane, a very respectable act!</description>
         <baseMoodEffect>2</baseMoodEffect>
       </li>
     </stages>
@@ -282,7 +282,7 @@
     <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
     <stages>
       <li>
-        <label>divine Amalgamation participant</label>
+        <label>divine Membrane participant</label>
         <baseOpinionOffset>2</baseOpinionOffset>
       </li>
     </stages>
@@ -294,8 +294,8 @@
     <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
     <stages>
       <li>
-        <label>want to participate in Amalgamation</label>
-        <description>It's been far too long since I was involved in an act of Amalgamation.</description>
+        <label>want to participate in Membrane</label>
+        <description>It's been far too long since I was involved in an act of Membrane.</description>
         <baseMoodEffect>-8</baseMoodEffect>
       </li>
     </stages>
